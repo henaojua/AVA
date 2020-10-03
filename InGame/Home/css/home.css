@@ -1,0 +1,226 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    /*font-weight: 100;*/
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    margin-right: 50px; 
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista {
+    display: flex;       
+}
+
+.titular a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 20px 30px; 
+    border-radius: 30px;   
+    color: white;
+    transition: 1s;
+}
+
+
+.titular a:hover {
+    color: black;
+    transition: 1s;
+}
+.lista li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;    
+}
+
+.lista li a:visited {
+    color: white;
+    font-weight: bolder;    
+}
+
+.titular {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+header {    
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url("/img/fondo1.jpg");
+    
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/img/fondo1.jpg");
+
+    height: 150px;
+    object-fit: scale-down;
+    object-position: bottom;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.contenedor {
+    color: white;
+    font-weight: bolder;
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+}
+
+/*Estilos seccion mundos*/
+
+#mundos {
+    /*background: #D2DBDD;*/
+    background:white;
+    width: 100%;
+}
+
+.contenedor-mundos {
+    width: 80%;
+    padding-top: 40px;
+    max-width: 1024px;
+}
+
+.contenedor-mundos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.mundo {
+    width: 300px;
+    border-radius: 30px;
+    transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 13px 10px -7px rgba(0, 0, 0,0.1);
+    margin-bottom: 40px;
+    border: 1px solid rgb(0,0,0,0.15);
+}
+
+
+.mundo--1 .mundo__img, .mundo--1 .mundo__img--hover {
+    background-image: url("/InGame/Home/img/mundo-1.jpg");
+}
+
+.mundo--2 .mundo__img, .mundo--2 .mundo__img--hover {
+    background-image: url("/InGame/Home/img/mundo-2.jpg");
+}
+
+.mundo--3 .mundo__img, .mundo--3 .mundo__img--hover {
+    background-image: url("/InGame/Home/img/mundo-3.jpg");
+}
+
+.mundo--4 .mundo__img, .mundo--4 .mundo__img--hover {
+    background-image: url("/InGame/Home/img/mundo-4.jpg");
+}
+
+.mundo--5 .mundo__img, .mundo--5 .mundo__img--hover {
+    background-image: url("/InGame/Home/img/mundo-5.jpg");
+}
+
+.mundo--6 .mundo__img, .mundo--6 .mundo__img--hover {
+    background-image: url("/InGame/Home/img/mundo-6.jpg");
+}
+
+.mundo--7 .mundo__img, .mundo--7 .mundo__img--hover {
+    background-image: url("/InGame/Home/img/mundo-7.jpg");
+}
+
+.mundo__img {
+    visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 235px;
+}
+
+.mundo__img--hover {
+	transition: 0.2s all ease-out;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	position: absolute;
+	height: 235px;
+	border-top-left-radius: 12px;
+	border-top-right-radius: 12px;
+	top: 0;
+}
+
+.mundo:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0,0.1);
+  transform: scale(1.05, 1.05);
+}
+
+.mundo__info {
+	z-index: 2;
+	background-color: #fff;
+	border-bottom-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	padding: 16px 24px 24px 24px;
+}
+
+.mundo__category {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #868686;  
+}
+
+.mundo__title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.mundo:hover .mundo__img--hover {
+    height: 100%;
+    opacity: 0.3;
+}
+
+.mundo:hover .mundo__info {
+    background-color: transparent;
+    position: relative;
+}
+
+.mundo:hover .mundo__info-hover {
+    opacity: 1;
+}
